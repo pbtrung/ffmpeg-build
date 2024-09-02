@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-FFMPEG_VERSION=7.0
+FFMPEG_VERSION=7.0.2
 FFMPEG_TARBALL=ffmpeg-$FFMPEG_VERSION.tar.gz
-FFMPEG_TARBALL_URL=http://ffmpeg.org/releases/$FFMPEG_TARBALL
+FFMPEG_TARBALL_URL=https://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
     --disable-shared
@@ -14,8 +14,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-avdevice
     --disable-swscale
     --disable-programs
-    --enable-ffmpeg
-    --enable-ffprobe
     --disable-network
     --disable-muxers
     --disable-demuxers
@@ -163,7 +161,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=pcm_u24le
     --enable-decoder=pcm_u32be
     --enable-decoder=pcm_u32le
-    --enable-decoder=pcm_zork
     --enable-decoder=dsd_lsbf
     --enable-decoder=dsd_msbf
     --enable-decoder=dsd_lsbf_planar
@@ -179,4 +176,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-parser=mpegaudio
     --enable-parser=tak
     --enable-parser=vorbis
+
+    --enable-libsoxr
 )
