@@ -33,23 +33,13 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-nvenc
     --disable-videotoolbox
     --disable-audiotoolbox
-
     --disable-filters
-    --enable-filter=aformat
-    --enable-filter=anull
-    --enable-filter=atrim
-    --enable-filter=format
-    --enable-filter=null
-    --enable-filter=setpts
-    --enable-filter=trim
-
+    
     --disable-protocols
     --enable-protocol=file
     --enable-protocol=pipe
 
-    --enable-demuxer=image2
     --enable-demuxer=aac
-    --enable-demuxer=ac3
     --enable-demuxer=aiff
     --enable-demuxer=ape
     --enable-demuxer=asf
@@ -64,8 +54,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=mpc
     --enable-demuxer=mpc8
     --enable-demuxer=ogg
-    --enable-demuxer=pcm_alaw
-    --enable-demuxer=pcm_mulaw
     --enable-demuxer=pcm_f64be
     --enable-demuxer=pcm_f64le
     --enable-demuxer=pcm_f32be
@@ -90,18 +78,15 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=tta
     --enable-demuxer=wav
     --enable-demuxer=wv
-    --enable-demuxer=xwma
     --enable-demuxer=dsf
 
     --enable-decoder=aac
     --enable-decoder=aac_latm
-    --enable-decoder=ac3
     --enable-decoder=alac
     --enable-decoder=als
     --enable-decoder=ape
     --enable-decoder=atrac1
     --enable-decoder=atrac3
-    --enable-decoder=eac3
     --enable-decoder=flac
     --enable-decoder=gsm
     --enable-decoder=gsm_ms
@@ -126,21 +111,12 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=tta
     --enable-decoder=vorbis
     --enable-decoder=wavpack
-    --enable-decoder=wmalossless
-    --enable-decoder=wmapro
-    --enable-decoder=wmav1
-    --enable-decoder=wmav2
-    --enable-decoder=wmavoice
 
-    --enable-decoder=pcm_alaw
-    --enable-decoder=pcm_bluray
-    --enable-decoder=pcm_dvd
     --enable-decoder=pcm_f32be
     --enable-decoder=pcm_f32le
     --enable-decoder=pcm_f64be
     --enable-decoder=pcm_f64le
     --enable-decoder=pcm_lxf
-    --enable-decoder=pcm_mulaw
     --enable-decoder=pcm_s8
     --enable-decoder=pcm_s8_planar
     --enable-decoder=pcm_s16be
@@ -168,7 +144,6 @@ FFMPEG_CONFIGURE_FLAGS=(
 
     --enable-parser=aac
     --enable-parser=aac_latm
-    --enable-parser=ac3
     --enable-parser=cook
     --enable-parser=dca
     --enable-parser=flac
