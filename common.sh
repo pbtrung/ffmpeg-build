@@ -34,7 +34,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-nvenc
     --disable-videotoolbox
     --disable-audiotoolbox
-    --disable-filters
     
     --disable-protocols
     --enable-protocol=file
