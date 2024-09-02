@@ -13,6 +13,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-debug
     --disable-avdevice
     --disable-swscale
+    --disable-avfilter
     --disable-programs
     --disable-network
     --disable-muxers
@@ -103,8 +104,6 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=mpc7
     --enable-decoder=mpc8
     --enable-decoder=opus
-    --enable-decoder=ra_144
-    --enable-decoder=ra_288
     --enable-decoder=ralf
     --enable-decoder=shorten
     --enable-decoder=tak
