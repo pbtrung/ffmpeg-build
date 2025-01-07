@@ -39,7 +39,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-protocol=pipe
 
     --enable-demuxer=aac
-    --enable-demuxer=mp4
+    --enable-demuxer=mov
     --enable-demuxer=ape
     --enable-demuxer=flac
     --enable-demuxer=mp3
